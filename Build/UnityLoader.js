@@ -4998,7 +4998,8 @@ var UnityLoader = UnityLoader || {
      (r.worker.onmessage = function (e) {
       return e.data.ready
        ? void URL.revokeObjectURL(n)
-       : (this.callbacks[e.data.id](e.data.decompressed));
+       : (this.callbacks[e.data.id](e.data.decompressed),
+         void delete this.callbacks[e.data.id]);
      }),
      (r.worker.callbacks = {}),
      (r.worker.nextCallbackId = 0);
