@@ -9,7 +9,7 @@ new Vue({
       var options = {
         callback: 'fn'
       };
- this.$http.jsonp('https://script.google.com/macros/s/AKfycbyLb4P_7MkScAMOHBzK_WtuCYcNn4XiK_I15UMBfEEDJOgeK41F/exec', options).then(function(data) {
+ this.$http.jsonp('https://script.google.com/macros/s/AKfycby6ZhSkDojTgH6TlBS6wWJZBmjV9Ibp9G13wIAqLPiItMzhDzw/exec', options).then(function(data) {
         this.data = JSON.parse(data.bodyText);
       }, function(error) {
         this.data = error;
