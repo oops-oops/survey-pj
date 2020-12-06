@@ -1,6 +1,5 @@
 fetch("https://script.google.com/macros/s/AKfycby6ZhSkDojTgH6TlBS6wWJZBmjV9Ibp9G13wIAqLPiItMzhDzw/exec", {
     method: 'POST',
-    body: data,
     headers: {
         'Content-Type': 'text/plain;charset=utf-8',
     }
